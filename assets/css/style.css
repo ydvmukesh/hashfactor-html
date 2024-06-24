@@ -1,0 +1,135 @@
+.main-banner {
+    background: url(../images/home/banner-bg.png) no-repeat center/ cover;
+    background-color: var(--primary-dark-color)
+}
+
+.bitcoin-features {
+    background: url(../images/home/effective-bitcoin-bg.png); background-position:  center top; background-repeat: no-repeat; background-size: cover;
+}
+.dark .bitcoin-features {
+background: #fff;
+}
+
+/* .certified-bitcoin */
+.certified-bitcoin {
+    background: url(../images/home/certified-bitcoin.png) no-repeat center/ cover;
+}
+/* .dark .effective-pricing {
+    background: var(--primary-color);
+} */
+.certified-item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    align-items: center;
+    place-items: center;
+    background: var(--white-color);
+    border-radius: 18px;
+}
+/* effective-pricing  */
+.effective-pricing {
+    background: url(../images/home/pricing-bg.png) no-repeat center/cover;
+}
+
+
+.plan {
+    border-radius: 1em;
+    position: relative;
+    height: 100%;  
+      display: flex;
+    flex-direction: column;
+    background: #26254296;
+
+}
+.plan-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    height: 100%;
+}
+.plan::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: 15px;
+    opacity: 1;
+    box-sizing: border-box
+}
+
+.plan--free::before{
+    background: linear-gradient(#205175, #0a0526) padding-box, linear-gradient(0turn, #033442, #00c3ffa2, #00c5ff) border-box;    border: 2px solid transparent;
+}
+
+.plan--free .plan-title{
+    border-bottom: 1px solid #00c5ff8a ;
+}
+.plan--blue::before{
+    background: linear-gradient(#262542, #161329) padding-box, linear-gradient(0turn, #222E4E, #5b5a88ad, #5B5A88) border-box;
+       border: 2px solid transparent;
+}
+.plan--blue .plan-title{
+    border-bottom: 1px solid #5B5A88 ;
+}
+.plan-title {
+    font-size: var(--fs-6xl);
+    padding-block: clamp(16px, 4px + 1.6364vw, 35px);
+    margin-bottom: 0;
+}
+
+p.plan-price {
+    font-size: var(--fs-6xl);
+    margin-bottom:0 ;
+}
+
+.plan-price span {
+    display: block;
+    font-weight: 500;
+    font-size: var(--fs-5xl);
+    color: var(--highlight-color);
+    margin-top: 5px;
+}
+
+.plan-description li {
+    margin-bottom:clamp(8px,1vw, 16px) ;
+    font-size: var(--fs-lg);
+    color: var(--white-color);
+}
+ul.plan-description{
+    padding-block: clamp(20px,3vw,40px);
+}
+.plan .btn{padding-inline: clamp(22px, 13px + 1.9vw, 48px);  box-shadow: none;  margin-top: auto;}
+
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.table {
+    min-width: max-content;
+    color: var(--white-color);
+    border-collapse:collapse;width:100%
+}
+
+  th, td {
+    text-align: left;
+    padding: clamp(14px, 6.5px + 0.7839vw, 20px) clamp(22px, 13px + 1.9vw, 50px);
+    font-size: var(--fs-lg);
+  }
+  thead tr{
+    font-size: var(--fs-3xl);
+    background-image: linear-gradient(to right, #353585, #171785);
+}
+  tbody tr:nth-child(odd) {
+    background-image: linear-gradient(to right, #1e275a, #0c0c3d);
+  }
+
+  table a{
+    color: var(--blue-color-200);
+    text-decoration: underline;
+  }

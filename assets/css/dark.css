@@ -1,0 +1,9 @@
+.body.dark,
+html .dark{
+    background: var( --white-color);
+  }
+  :where(.dark-color) .section-title,
+  :where(.dark-color) p {
+    color: var(--heading-dark-color);
+  }
+  
